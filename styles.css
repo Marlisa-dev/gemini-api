@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: Arial, sans-serif;
+    font-size: 18px
+  }
+.container{
+    width: 80%;
+    border: solid;
+    height: 80vh;
+    margin: 10vh 10vw;
+    padding:40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.question, .answer{
+    border: solid;
+    width: 30vw;
+    padding: 20px;
+
+}
+.question label{
+    font-size: 22px;
+    font-weight: bold;
+  
+}
+
+.question input[type=text]{
+    margin: 20px 0 3px 0;
+    height: 40px;
+    width: 26vw;
+    padding-left: 15px;
+}
+.question input[type=text]:focus{
+    font-size: 18px;
+    color: grey;
+}
+.question input[type=text]::placeholder{
+    font-size: 18px;
+    color: grey;
+}
+.question input[type=submit]{
+    margin: 10px 0 10px 0;
+    height: 40px;
+    width: 10vw;
+    background-color: lightskyblue;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+}
