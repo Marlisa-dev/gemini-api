@@ -9,17 +9,20 @@
 <body>
     <div class="container">
         <div class="question">
-            <form>
-                <label>Talk to our interactive AI</label><br>
-                <input type="text" placeholder="Type your question here"> <br>
-                <input type="submit" value="Submit">
+            <form id="query-form">
+                <label for="title">Talk to our interactive AI</label><br>
+                <input type="text" placeholder="Type your question here" name="title" id="title"> <br>
+                <input type="submit" value="Submit" id="submit-btn">
             </form>
         </div>
         <div class="answer">
             <h4>Your Answer here</h4>
+            <div id="output-answer"></div>
     
         </div>
     </div>
+
+    <script src="./gemini.js"></script>
 
     
 </body>
